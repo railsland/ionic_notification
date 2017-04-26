@@ -26,7 +26,7 @@ module IonicNotification
     private
 
     def headers
-      { 'Content-Type' => 'application/json', 'Authorization' => "Bearer #{IonicNotification.ionic_application_api_token}" }
+      { 'Content-Type' => 'application/json', 'X-Ionic-Application-Id' => IonicNotification.ionic_application_id, 'Authorization' => IonicNotification.api_token_auth }
     end
   end
 end
