@@ -36,18 +36,8 @@ Configure the ionic_notification.rb file within config/initializers. You can use
 
 ```Ruby
   IonicNotification.setup do |config|
-    
     config.ionic_application_id = ENV["IONIC_APPLICATION_ID"]
     config.ionic_application_api_token = ENV["IONIC_APPLICATION_API_TOKEN"]
-
-    config.ionic_app_name = "YourAppName"
-
-    # ==> Configuration for the location of the API
-    # Refer to the Ionic documentation for the correct location
-    # Current documentation can be found here:
-    # http://docs.ionic.io/docs/push-sending-push and
-    # defaults to https://push.ionic.io
-    # config.ionic_api_url = ENV["IONIC_API_URL"]
   end
 ```
 
@@ -151,6 +141,12 @@ This is, wait for it, your Ionic application id, should be something like `"258d
 > **_required_**
 
 This must equal your Ionic API key, should be a pretty long string.
+
+#### `development_profile_tag`
+Your Ionic development security profile tag
+
+#### `production_profile_tag`
+Your Ionic production security profile tag
 
 #### `ionic_app_name`
 `ionic_app_name` will be used as the default title for your notifications, though in most cases on devices you will see the name of the installed app.
