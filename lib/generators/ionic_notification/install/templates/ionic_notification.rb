@@ -8,7 +8,6 @@ IonicNotification.setup do |config|
   # The  API Key for your application can be found
   # within the Settings of your application on
   # https://apps.ionic.io/apps
-  config.ionic_api_key = ENV["IONIC_API_KEY"]
   config.ionic_application_api_token = ENV["IONIC_APPLICATION_API_TOKEN"]
 
   # Your Ionic app name will be used for the notification

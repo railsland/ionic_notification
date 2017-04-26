@@ -6,10 +6,6 @@ module IonicNotification
   mattr_accessor :ionic_application_id
   @@ionic_application_id = ""
 
-  # Private key for sending information
-  mattr_accessor :ionic_api_key
-  @@ionic_api_key = ""
-
   # Private api token for sending information
   mattr_accessor :ionic_application_api_token
   @@ionic_application_api_token = ""

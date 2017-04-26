@@ -38,7 +38,7 @@ Configure the ionic_notification.rb file within config/initializers. You can use
   IonicNotification.setup do |config|
     
     config.ionic_application_id = ENV["IONIC_APPLICATION_ID"]
-    config.ionic_api_key = ENV["IONIC_API_KEY"]
+    config.ionic_application_api_token = ENV["IONIC_APPLICATION_API_TOKEN"]
 
     config.ionic_app_name = "YourAppName"
 
@@ -147,7 +147,7 @@ Here you'll find all required and optional options
 
 This is, wait for it, your Ionic application id, should be something like `"258d401f"`
 
-#### `ionic_api_key`
+#### `ionic_application_api_token`
 > **_required_**
 
 This must equal your Ionic API key, should be a pretty long string.
